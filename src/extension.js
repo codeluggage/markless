@@ -151,7 +151,7 @@ function bootstrap(context) {
 				textDecoration: "none; display: inline-block; width: 0;",
 				before: {
 					contentText: "",
-					textDecoration: "none; position: absolute; background: #ffaa00; top: 0.49em; bottom: 0.49em; width: 100%; mix-blend-mode: luminosity; border: outset;",
+					textDecoration: "none; position: absolute; background: #ffaa00; width: 100%; mix-blend-mode: luminosity; border: outset;",
 				}
 			});
 			return (start, end) => {
@@ -182,7 +182,9 @@ function bootstrap(context) {
 		})()]],
 		["list", ["listItem", (() => {
 			const getBulletDecoration = memoize((level) => {
-				const listBullets = ["❧", "☯", "♠", "❀", "♚", "☬", "♣", "♥", "🙤", "⚜", "⚛", "⛇", "⚓", "☘", "☔"];
+				// These are big, and fit better for top level headings:
+				// const listBullets = ["◉", "○", "✸", "✿", "◉", "○", "✸", "✿", "◉", "○", "✸", "✿", "◉", "○", "✸", "✿"];
+				const listBullets = ["▸", "•", "▸", "•", "▸", "•", "▸", "•", "▸", "•", "▸", "•", "▸", "•", "▸", "•", "▸", "•", "▸", "•"];
 				return vscode.window.createTextEditorDecorationType({
 					color: "transparent",
 					textDecoration: "none; display: inline-block; width: 0;",

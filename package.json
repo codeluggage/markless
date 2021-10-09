@@ -1,11 +1,11 @@
 {
-	"name": "markless-sean10",
-	"publisher": "sean10",
-	"displayName": "Markless_sean10",
-	"description": "Inline markdown preview.  Vim mode and WYSIWYG mermaid, latex and image rendering. Support something custom which modified by sean10.",
-	"version": "1.0.14",
+	"name": "markless-org-mode",
+	"publisher": "codeluggage",
+	"displayName": "Markless (org-mode)",
+	"description": "Inline markdown preview.  Vim mode and WYSIWYG mermaid, latex and image rendering. Adopt org-mode patterns for improved display.",
+	"version": "1.0.15",
 	"engines": {
-		"vscode": "^1.56.0"
+		"vscode": "^1.61.0"
 	},
 	"license": "MIT",
 	"categories": [
